@@ -1,58 +1,70 @@
-const modalBtn = document.querySelector(".popup_engineer_btn"),
-  modalWindow = document.querySelector(".popup_engineer"),
-  callBtn = document.querySelectorAll("[data-call]"),
-  callModal = document.querySelector(".popup");
+import "./slider";
+import modals from "./modules/modals";
 
-function openModal(btnSelector, modalSelector) {
-  const showModal = () => {
-    modalSelector.classList.add("show");
-    document.querySelector("body").style.overflow = "hidden";
-  };
-  btnSelector.addEventListener("click", (e) => {
-    e.preventDefault();
-    showModal();
-  });
-}
+modals();
 
-function closeModal(modalSelector) {
-  const hideModal = () => {
-    modalSelector.classList.remove("show");
-    document.querySelector("body").style.overflow = "";
-  };
-  modalSelector.querySelector(".popup_close").addEventListener("click", () => {
-    hideModal();
-  });
-  modalSelector.addEventListener("click", (e) => {
-    if (e.target === modalSelector) {
-      hideModal();
-    }
-  });
-}
-
-openModal(modalBtn, modalWindow);
-closeModal(modalWindow);
-// modalBtn.addEventListener("click", () => {
-//   modalWindow.classList.add("show");
-// });
-
-// modalWindow.querySelector(".popup_close").addEventListener("click", () => {
-//   modalWindow.classList.remove("show");
-// });
-
-// modalWindow.addEventListener("click", (e) => {
-//   if (e.target === modalWindow) {
-//     modalWindow.classList.remove("show");
-//   }
-// });
-
-// const callBtn = document.querySelectorAll("[data-call]"),
+// const modalBtn = document.querySelector(".popup_engineer_btn"),
+//   modalWindow = document.querySelector(".popup_engineer"),
+//   callBtn = document.querySelectorAll("[data-call]"),
 //   callModal = document.querySelector(".popup");
 
-callBtn.forEach((elem) => {
-  openModal(elem, callModal);
-  //   elem.addEventListener("click", (e) => {
-  //     e.preventDefault();
-  //     callModal.classList.add("show");
-  //   });
-});
-closeModal(callModal);
+// function openModal(btnSelector, modalSelector) {
+//   const showModal = () => {
+//     modalSelector.classList.add("show");
+//     document.querySelector("body").style.overflow = "hidden";
+//   };
+
+//   btnSelector.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     showModal();
+//   });
+// }
+
+// function closeModal(modalSelector) {
+//   const hideModal = () => {
+//     modalSelector.classList.remove("show");
+//     document.querySelector("body").style.overflow = "";
+//   };
+
+//   modalSelector.querySelector(".popup_close").addEventListener("click", () => {
+//     hideModal();
+//   });
+
+//   modalSelector.addEventListener("click", (e) => {
+//     if (e.target === modalSelector) {
+//       hideModal();
+//     }
+//   });
+// }
+
+// openModal(modalBtn, modalWindow);
+// closeModal(modalWindow);
+
+// callBtn.forEach((elem) => {
+//   openModal(elem, callModal);
+// });
+// closeModal(callModal);
+
+// const forms = document.querySelectorAll(".form");
+
+// forms.forEach((form) => {
+//   form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     const formData = new FormData(form);
+//     const json = JSON.stringify(Object.fromEntries(formData));
+
+//     const postData = async (url, data) => {
+//       const res = await fetch(url, {
+//         method: "POST",
+//         headers: {
+//           "Content-type": "application/json",
+//         },
+//         body: data,
+//       });
+
+//       return await res.json();
+//     };
+
+//     postData("server.php", json).then((data) => console.log(data));
+//   });
+// });
