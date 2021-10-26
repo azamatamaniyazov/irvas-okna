@@ -1,7 +1,17 @@
 import "./slider";
 import modals from "./modules/modals";
+import timer from "./modules/timer";
+import tabs from "./modules/tabs";
 
 modals();
+timer(".container1", "2021-12-31");
+tabs(".glazing_slider", ".glazing_block", ".glazing_content", "active");
+tabs(
+  ".decoration_slider",
+  ".no_click",
+  ".decoration_content > div > div",
+  "after_click"
+);
 
 // const modalBtn = document.querySelector(".popup_engineer_btn"),
 //   modalWindow = document.querySelector(".popup_engineer"),
