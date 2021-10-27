@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "user_name": "azamat",
+      "user_phone": "1234567",
+      "id": 2
+    },
+    {
+      "user_name": "azamat",
+      "user_phone": "12",
+      "id": 3
+    },
+    {
+      "user_name": "azamat",
+      "user_phone": "1234567",
+      "id": 4
+    },
+    {
+      "user_name": "azamat",
+      "user_phone": "1234567",
+      "id": 5
+    },
+    {
+      "user_name": "asdasd",
+      "user_phone": "213sxz",
+      "id": 6
+    },
+    {
+      "user_name": "sd",
+      "user_phone": "213sxz",
+      "id": 7
+    },
+    {
+      "user_name": "azamat",
+      "user_phone": "12",
+      "id": 8
+    },
+    {
+      "user_name": "azamat",
+      "user_phone": "1234567",
+      "id": 9
+    },
+    {
+      "user_name": "wdasd",
+      "user_phone": "2132w",
+      "id": 10
+    },
+    {
+      "user_name": "wdasd",
+      "user_phone": "14651",
+      "id": 11
+    },
+    {
+      "user_name": "azamat",
+      "user_phone": "12312",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
